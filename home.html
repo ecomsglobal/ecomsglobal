@@ -720,47 +720,25 @@
                             <h2>Need Help?</h2>
                             <p>Start your eCommerce success today! Contact us for a consultation and let's make it happen!</p>
                         </div>
-                        <form action="assets/mail/contact.php" method="POST" class="contact-form">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group">
-                                        <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group">
-                                        <input class="form-control" id="phone" name="phone" placeholder="Phone" type="text">
-                                        <span class="alert-error"></span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="form-group comments">
-                                        <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <button type="submit" name="submit" id="submit">
-                                        Contact Us
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- Alert Message -->
-                            <div class="col-md-12 alert-notification">
-                                <div id="message" class="alert-msg"></div>
-                            </div>
+                        <!-- modify this form HTML and place wherever you want your form -->
+                        <form
+                          action="https://formspree.io/f/xvojlpdg"
+                          method="POST"
+                        >
+                          <label>
+                            Your email:
+                            <input class="form-control" id="name" name="name" placeholder="Name" type="text">
+                          </label>
+                          <label>
+                            Your email:
+                            <input class="form-control" id="email" name="email" placeholder="Email*" type="email">
+                          </label>
+                          <label>
+                            Your message:
+                            <textarea class="form-control" id="comments" name="comments" placeholder="Please describe what you need."></textarea>
+                          </label>
+                          <!-- your other form fields go here -->
+                          <button type="submit">Send</button>
                         </form>
                     </div>
                 </div>
